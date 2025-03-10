@@ -121,6 +121,8 @@ def fit(history, num_epochs, net, optimizer, criterion, train_loader, test_loade
                         avg_train_acc, avg_test_loss, avg_test_acc])
         history = np.vstack((history, item))
 
+    return history
+
 
 # 学習履歴の表示用
 def show_history(history):
