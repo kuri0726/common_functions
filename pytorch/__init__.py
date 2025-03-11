@@ -82,7 +82,7 @@ def fit(history, num_epochs, net, optimizer, criterion, train_loader, test_loade
 
         for inputs_test, labels_test in test_loader:
             # 1バッチあたりのデータ件数
-            test_batch_size = len(labels)
+            test_batch_size = len(labels_test)
 
             # 1エポックあたりのデータ累積件数
             n_test += test_batch_size
